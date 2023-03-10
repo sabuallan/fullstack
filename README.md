@@ -1,2 +1,2 @@
 # fullstack
-My repository for Fullstack Academy x Amazon Career Choice
+To improve is to change.
