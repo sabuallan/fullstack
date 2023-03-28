@@ -1,0 +1,25 @@
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffee04;
+}
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px auto;
+}

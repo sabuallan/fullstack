@@ -1,0 +1,45 @@
+body {
+    background-color: #f96167;
+    max-height: 3000px;
+}
+h1 {
+    color: black;
+}
+
+p {
+    text-align: left;
+    color: black;
+}
+header {
+    font-size: x-large;
+    color: black;
+}
+section{
+    border: 2px white;
+    border-radius: 5px;
+    width: 90%;
+    max-height: 700px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    background-color: #fce77d;
+}
+div {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    display: inline-flex;
+    border: 2px solid white;
+    background-color: coral;
+    padding: 2px;
+    vertical-align: middle;
+    margin: 20px;
+    text-align: left;
+}
+.right-container {
+    background-color: black;
+}
+img{
+    max-width: min-content;
+    max-height: min-content;
+}
