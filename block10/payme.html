@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Pay me</title>
+</head>
+<body>
+    <h1 id="title">Welcome to the Pay Me Webpage!</h1>
+	<p id="content"></p>
+	<script>
+		// generate a random number between 1 and 10
+		const randomNumber = Math.floor(Math.random() * 1000) + 1;
+		
+		// set the content of the page based on the random number
+		if (randomNumber % 2 == 0) {
+			document.getElementById("title").innerHTML = "It's your lucky day";
+			document.getElementById("content").innerHTML = "This artwork is yours for the lovely price: " + randomNumber +  " " + "dollars";
+		} else {
+			document.getElementById("title").innerHTML = "CONGRATULATIONS";
+			document.getElementById("content").innerHTML = "You owe me: " + randomNumber + " " + "dollars";
+		}
+	</script>
+    <p>There were no requirements for this page! So the amount you owe me will be random!</p>
+    
+</body>
+</html>
