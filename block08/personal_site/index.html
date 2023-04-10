@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to my website!</h1>
+            <p>
+                I am a full stack developer with experience in HTML, CSS, JavaScript,
+                and more. Take a look at my portfolio and skills to learn more about
+                what I can do.
+            </p>
+            <a href="portfolio.html" class="button">View my work</a>
+        </div>
+    </section>
+    <section class="about">
+        <h2>About me</h2>
+        <p>
+            Hi, my name is Your Name and I'm a full stack developer with a passion
+            for building great websites and web applications. I have 3 years of
+            management experience and 1 year of experience with HTML, CSS, and
+            JavaScript.
+        </p>
+        <p>
+            In my free time, I enjoy working on personal coding projects and
+            contributing to open source software projects. I also love to travel and
+            try new foods.
+        </p>
+    </section>
+    <section class="contact">
+        <h2>Get in touch</h2>
+        <p>
+            If you're interested in working together or have any questions, please
+            feel free to contact me using the form below.
+        </p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; Your Name 2023</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
+
 </html>
