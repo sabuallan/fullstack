@@ -1,0 +1,232 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font family and size */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Add some padding to the body */
+body {
+  padding: 1rem;
+}
+
+/* Add a background color to the body */
+body {
+  background-color: #f0f0f0;
+}
+
+/* Set styles for the header */
+header {
+  background-color: #e6b8b7;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Style the navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style the hero section */
+.hero {
+  background-color: #dbd9e7;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Style the about section */
+.about {
+  background-color: #f3e8d8;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Style the contact section */
+.contact {
+  background-color: #b3cde0;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact button {
+  background-color: #fff;
+  color: #444;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact button:hover {
+  background-color: #eee;
+}
+
+/* Style the footer */
+footer {
+  background-color: #e6b8b7;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+/* Style the portfolio section */
+.portfolio {
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.portfolio img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.portfolio li:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.portfolio li:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio h3,
+.portfolio p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.portfolio h3 {
+  font-size: 1.5rem;
+}
+
+.portfolio p {
+  font-size: 1.2rem;
+}
+/* About section styles */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  
+  .about-text {
+    max-width: 600px;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+  }
