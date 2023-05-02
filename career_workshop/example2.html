@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Parallax Scrolling</title>
+    <style>
+      /* Add some basic styling to the elements */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 2000px;
+        font-family: Arial, sans-serif;
+      }
+
+      .background-image {
+        position: relative;
+        height: 800px;
+        background-image: url('https://images.unsplash.com/photo-1573497491009-330e0a6edf24');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      .content {
+        position: relative;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        font-size: 36px;
+      }
+
+      .parallax {
+        position: relative;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        font-size: 36px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-image">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Welcome to my website</h1>
+      </div>
+    </div>
+    <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1605582011743-fc4263e0c0b3')">
+      <h2>Scroll down to see the parallax effect</h2>
+    </div>
+    <div class="content">
+      <h2>This is some content below the parallax section</h2>
+    </div>
+    <script>
+      // Add event listener for when the user scrolls the page
+      window.addEventListener('scroll'), function() {
+        // Get the height of the viewport
+        const viewportHeight = window.innerHeight;
+        // Get the current vertical scroll position of the page
+        const scrollPosition = window.scrollY;
+        // Get a reference to the parallax section
+        const parallaxSection = document.querySelector('.parallax');
+        // Calculate the distance of the parallax section from the top of the page
+        const parallaxSectionTop = parallaxSection.offsetTop;
+        // Calculate the distance of the bottom of the parallax section from the top of the page
+        const parallaxSectionBottom = parallaxSectionTop + parallaxSection.offsetHeight;
+        // Calculate the amount of overlap between the viewport and the parallax section
+        const overlap = Math.max(0, Math.min(viewportHeight, parallaxSectionBottom) - Math.max(0, parallaxSectionTop + viewportHeight));
+        // Calculate the ratio of overlap to the height of the viewport
+        const overlapRatio = overlap / viewportHeight;
+        // Set the parallax effect
+      }
+      </script>
+  </body>
